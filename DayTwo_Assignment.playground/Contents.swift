@@ -11,8 +11,6 @@ var greeting = "Hello, playground"
  classes objects are mutuable by default
  classes are slow compared to structs
  
- 
- 
  Struct: Its value type.
  It doesn't support inheritance.
  struct objects stored in stack memory
@@ -22,7 +20,6 @@ var greeting = "Hello, playground"
  // 2. what is ref type and what is value type , expalin with example.
  
  Ref type : here where instances share the same memory  EX: Class
- 
  Value Type : Here where instances keeps a unique copy . Ex:  Structs
  
  // 3.  why strcts are faster compare to classes
@@ -45,11 +42,9 @@ You can mutate structs using mutating Keyword
  
  In Enum we can pass additional values to each case is called associated value
  
- 
  // 8. diff b/w associated type and raw value
  
  Ans : Raw value is fixed and same for all cases, whereas associated value can vary per case
- 
  
  // 9. what is protocol
  
@@ -72,9 +67,7 @@ You can mutate structs using mutating Keyword
  // 14. where sturct obj get srored and where does clases object get stored
  Ans : Structs objects are stored in Stack Memory
          Classes objects are stored in Heap memory
-
- */
-
+*/
 
 // create a calcular Class with basic mathematics operations, difine first rules using protocol
 
@@ -90,17 +83,16 @@ class Calculator : MathOperations {
     func add(num1 : Int, num2 :  Int) -> Int {
         return num1 + num2
     }
-    
     func subtract(num1 : Int, num2 :  Int) -> Int {
-        return num1 - num2    }
-    
+        return num1 - num2   
+    }
     func multiple(num1 : Int, num2 :  Int) -> Int{
-        return num1 * num2    }
+        return num1 * num2  
+    }
     func divide(num1 : Int, num2 :  Int) -> Int{
         return num1 / num2
     }
 }
-
 
 let calc = Calculator()
 print(calc.add(num1 : 10, num2 : 20))
@@ -108,9 +100,7 @@ print(calc.subtract(num1 : 10, num2 : 20))
 print(calc.multiple(num1 : 10, num2 : 20))
 print(calc.divide(num1 : 10, num2 : 20))
 
-
 // create a integer array and write sorting logic (use any best sorting alogirithm, don't use inbuild sort function)
-
 
 var arr = [34,5,6,3,5,9]
 
